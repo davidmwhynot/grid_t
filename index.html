@@ -4,10 +4,40 @@
     <meta charset="utf-8">
     <title>CSS Grids Tutorial</title>
     <style>
+      .wrapper {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        /*
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+        */
+        grid-gap: 1em;
+      }
 
+      .wrapper > div {
+        background: #eee;
+        padding: 1em;
+      }
+
+      .wrapper > div:nth-child(odd) {
+        background: #ddd;
+      }
     </style>
   </head>
   <body>
-
+    <div class="wrapper">
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita earum corporis, laborum reiciendis. Eum quae sint quisquam, consequatur eveniet neque in architecto? Mollitia harum facilis, modi, veritatis, saepe tenetur dolor id nobis ab pariatur animi ex nam laborum at sunt? Itaque doloremque blanditiis quaerat doloribus iusto eveniet dolores libero provident natus. Dolorum nulla maxime atque laborum porro sint autem ducimus, adipisci eos amet hic nostrum, quam ex fuga vero id mollitia nihil dignissimos cupiditate? Qui doloribus saepe eos, possimus ut.
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos necessitatibus libero doloribus reiciendis doloremque quae error consequatur repellat obcaecati. Inventore nam nesciunt, ipsum nemo possimus dolorum maxime delectus eveniet vero!
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita earum corporis, laborum reiciendis. Eum quae sint quisquam, consequatur eveniet neque in architecto? Mollitia harum facilis, modi, veritatis, saepe tenetur dolor id nobis ab pariatur animi ex nam laborum at sunt? Itaque doloremque blanditiis quaerat doloribus iusto eveniet dolores libero provident natus. Dolorum nulla maxime atque laborum porro sint autem ducimus, adipisci eos amet hic nostrum, quam ex fuga vero id mollitia nihil dignissimos cupiditate? Qui doloribus saepe eos, possimus ut.
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos necessitatibus libero doloribus reiciendis doloremque quae error consequatur repellat obcaecati. Inventore nam nesciunt, ipsum nemo possimus dolorum maxime delectus eveniet vero!
+      </div>
+    </div>
   </body>
 </html>
